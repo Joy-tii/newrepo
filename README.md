@@ -31,8 +31,8 @@ HTML COURSE AT SKILL DARPAN....
 </div>
 
 <div>
-    <h2>Day 4</h2>
-    <a href="./table2.html" target="_blank"><h3>module 5 and 6</h3></a>
+    <h2>Day 5</h2>
+    <a href="./table2.html" target="_blank"><h3>module 9</h3></a>
 </div>
 
     </body>
