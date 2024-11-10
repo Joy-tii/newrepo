@@ -32,7 +32,7 @@ HTML COURSE AT SKILL DARPAN....
 
 <div  style="background-color: aquamarine; padding: 5px;">
     <h2 style="background-color: blueviolet; padding: 5px;">Day 4</h2>
-    <a href="./table.html" target="_blank"><h3>module 9</h3></a>
+    <a href="./../table.html" target="_blank"><h3>module 9</h3></a>
 </div>
 
     </body>
