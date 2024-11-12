@@ -31,11 +31,11 @@ HTML COURSE AT SKILL DARPAN....
 </div>
 
 <div  style="background-color: aquamarine; padding: 5px;">
-    <h2 style="background-color: blueviolet; padding: 5px;">Day 4</h2>
+    <h2 style="background-color: blueviolet; padding: 5px;">Day 5</h2>
     <a href="./table2.html" target="_blank"><h3>module 9</h3></a>
 </div>
 <div  style="background-color: aquamarine; padding: 5px;">
-    <h2 style="background-color: blueviolet; padding: 5px;">Day 4</h2>
+    <h2 style="background-color: blueviolet; padding: 5px;">Day 6</h2>
     <a href="./module 10 form.html" target="_blank"><h3>module 10</h3></a>
 </div>
 
