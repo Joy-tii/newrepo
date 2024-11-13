@@ -38,6 +38,10 @@ HTML COURSE AT SKILL DARPAN....
     <h2 style="background-color: blueviolet; padding: 5px;">Day 6</h2>
     <a href="./module 10 form.html" target="_blank"><h3>module 10</h3></a>
 </div>
+<div  style="background-color: aquamarine; padding: 5px;">
+    <h2 style="background-color: blueviolet; padding: 5px;">Day 7</h2>
+    <a href="./last class.html" target="_blank"><h3>module 11</h3></a>
+</div>
 
     </body>
 </html>
