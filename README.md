@@ -46,6 +46,18 @@ HTML COURSE AT SKILL DARPAN....
     <h2 style="background-color: blueviolet; padding: 5px;">Day 8</h2>
     <a href="./blog site.html" target="_blank"><h3>blog site</h3></a>
 </div>
+<div  style="background-color: aquamarine; padding: 5px;">
+    <h2 style="background-color: blueviolet; padding: 5px;">Day 9</h2>
+    <a href="./tajmahal blog site.html" target="_blank"><h3>Taj Mahal blog site</h3></a>
+</div>
+<div  style="background-color: aquamarine; padding: 5px;">
+    <h2 style="background-color: blueviolet; padding: 5px;">Day 9</h2>
+    <a href="./family site.html" target="_blank"><h3>My family site</h3></a>
+</div>
+<div  style="background-color: aquamarine; padding: 5px;">
+    <h2 style="background-color: blueviolet; padding: 5px;">Day 9</h2>
+    <a href="./project.html" target="_blank"><h3>Portfolio</h3></a>
+</div>
 
     </body>
 </html>
