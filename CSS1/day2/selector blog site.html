@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blog on selectors of css</title>
+        <style>
+            *{
+                padding: 10px;
+            }
+            h1{
+                text-align: center;
+                color: blue;
+                font-style: oblique;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .card {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #aaddeb;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px rgba(16, 15, 15, 0.1); /* Adds shadow */
+    font-family: Arial, sans-serif;
+  }
+  
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+
+  .card p {
+    color: #0b0404;
+    background-color: rgb(215, 238, 239);
+  }
+  .card ul,li{
+    color: #0b0404;
+    background-color: rgb(215, 238, 239);
+  }
+  
+
+
+  nav {
+            display: flex;
+justify-content: left;           
+ background-color: #336ed3;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #040a45;
+        }
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #15171a;
+            color: white;
+           
+            width: 100%;
+            bottom: 0;
+        }
+       
+        </style>
+    </head>
+    <body >
+        <h1><b>The Ultimate Guide to CSS Selectors
+        </b></h1>
+        <p><b>CSS selectors are the backbone of styling web pages, allowing developers to target specific HTML elements and apply styles to them. This blog explores all major types of CSS selectors, their syntax, and examples of their use.
+        </b>
+        </p>
+
+        <nav>
+            <a href="#Universal_Selector">Universal Selector</a>
+            <a href="#class_selector">Class Selector</a>
+            <a href="#Id_selector">Id Selector</a>
+            <a href="#Group_selector">Group Selector</a>
+            <a href="#type_selector">Type Selector</a>
+            <a href="#Descendent_selector">Descendent Selector</a>
+            <a href="#Pseudo_class">Pseudo Class</a>
+            <a href="#Attribute_Selector">Attribute Selector</a>
+
+
+
+        </nav>
+
+        <section class="card" id="Universal_Selector">
+            <h2>Universal Selector (*)</h2>
+            The universal selector applies styles to all elements in a document.
+
+            
+            <h3><b>Syntex:</b></h3>
+            <p>* {<br>
+                property: value;<br>
+            }<br>
+              </p>
+              <h3><b>examples:</b></h3>
+              <p>
+                * {<br>
+                    margin: 0;<br>
+                    padding: 0;<br>
+                    box-sizing: border-box;<br>
+                }<br>
+                  
+              </p>
+        </section>
+        <br>
+
+        <section id="class_selector" class="card" >
+            <h2>Class Selector (.)</h2>
+            The class selector targets elements with a specific class attribute.
+
+
+            
+            <h3><b>Syntex:</b></h3>
+            <p>.classname {<br>
+                property: value;<br>
+            }<br>
+              
+              </p>
+              <h3><b>examples:</b></h3>
+              <p>
+                .button {<br>
+                    background-color: green;<br>
+                    color: white;<br>
+                  }<br>
+                  
+                  
+              </p>
+        </section>
+        <br>
+
+        <section id="Id_selector" class="card" >
+            <h2> ID Selector (#)</h2>
+            The ID selector applies styles to a single element with a unique id.
+            <h3><b>Syntex:</b></h3>
+            <p>
+                #idname {<br>
+                    property: value;<br>
+                  }<br>
+                  
+              </p>
+              <h3><b>examples:</b></h3>
+              <p>
+                #header {<br>
+                    font-size: 24px;<br>
+                    font-weight: bold;<br>
+                  } <br>   
+              </p>
+        </section>
+        <br>
+
+        <section id="Group_selector" class="card" >
+            <h2>Group selector</h2>
+            The group selector applies the same styles to multiple selectors.
+                        <h3><b>Syntex:</b></h3>
+            <p>
+                selector1, selector2, selector3 { <br>
+                    property: value; <br>
+                  } <br>
+                  
+              </p>
+              <h3><b>examples:</b></h3>
+              <p>
+                h1, h2, h3 { <br>
+                    font-family: Arial, sans-serif; <br>
+                  } <br>
+                    
+              </p>
+        </section>
+        <br>
+
+        <section id="type_selector" class="card" >
+            <h2> Type Selector
+            </h2>
+            The type selector targets elements by their HTML tag name.
+
+            <h3><b>Syntex:</b></h3>
+            <p>
+                element {<br>
+                    property: value;<br>
+                  }<br>
+                  
+                  
+              </p>
+              <h3><b>examples:</b></h3>
+              <p>
+                h1 {<br>
+                    color: blue;<br>
+                  }<br>
+                  p {<br>
+                    line-height: 1.5;<br>
+                  }<br>
+                  
+                    
+              </p>
+        </section>
+        <br>
+        <section id="Descendent_selector" class="card" >
+            <h2>  Descendant Selector (Space)
+
+            </h2>
+            The descendant selector targets elements that are nested inside another element.
+
+
+            <h3><b>Syntex:</b></h3>
+            <p>
+                parent child {<br>
+                    property: value;<br>
+                  }<br>
+                  </p>
+              <h3><b>examples:</b></h3>
+              <p>
+                div p {<br>
+                    color: gray;<br>
+                  }<br>
+                </p>
+        </section>
+<br>
+        <section id="Pseudo_class" class="card" >
+            <h2>   Pseudo-Classes</h2>
+            Pseudo-classes target elements based on their state or position.
+
+
+
+            <h3><b>Syntex:</b></h3>
+            <p>
+                selector:pseudo-class {<br>
+                    property: value;<br>
+                  }<br>
+                  
+                  </p>
+              <h3><b>examples:</b></h3>
+              <p>
+                a:hover {<br>
+                    color: red;<br>
+                  }<br>
+                  
+                </p>
+        </section>
+
+        <br>
+        <section id="Attribute_Selector" class="card" >
+            <h2>   Attribute Selector</h2>
+            This selector targets elements based on their attributes.
+<h3><b>Syntex:</b></h3>
+            <ul>
+                <li> Exact match: [attribute=value]   <br></li>
+                <li> Partial match: [attribute*=value]   <br></li>
+                <li> Starts with: [attribute^=value]   <br></li>
+                <li> Ends with: [attribute$=value]   <br></li>
+            </ul>
+             <h3><b>examples:</b></h3>
+              <p>
+                input[type="text"] {   <br>
+                    border: 1px solid black;   <br>
+                  }   <br>
+                  
+                </p>
+        </section>
+        
+        <footer>
+            <p>© 2024 Blogs on CSS selector | Designed by Jyoti Kumari</p>
+        </footer>
+    
+    </body>
+</html>

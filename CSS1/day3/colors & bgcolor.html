@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Day 03:-colors and background-color</title>
+<style>
+   
+   *{
+                padding: 10px;
+            }
+   h1{
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4g_kNpPUgkRX9-Yg7sIFJ32tBzkqXvqK7A&s);
+   background-size: cover; 
+
+width: 100%;
+   color: rgb(250,250,250);
+    
+    text-align: center;
+   }
+h2{
+    color: #3c54ce;
+
+}
+h3{
+    color: rgb(51, 2, 26);
+}
+   nav {
+            display: flex;
+justify-content: center;           
+ background-color: #50024b;
+        }
+        nav a {
+            color: rgb(245, 236, 246);
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #250232;
+        }
+        table{
+            width: 100%;
+        }
+
+        th,td {
+            border: 2px solid rgb(17, 2, 74);color: #f9f1f1;
+            background-color: rgba(63, 19, 71, 0.5);
+        }
+
+        .card {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXNjLYxytHMcEa93ODJkaMYZ1sQMaXOZaBOg&s);
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0 8px 8px rgba(63, 19, 71, 0.5); /* Adds shadow */
+    font-family: Arial, sans-serif;
+  }
+  
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+
+  .card p {
+    color: #0b0404;
+    background-color: rgb(253, 250, 252);
+  }
+
+ ul{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4g_kNpPUgkRX9-Yg7sIFJ32tBzkqXvqK7A&s);
+    color: #ffffff;
+ }
+
+ footer {
+            text-align: center;
+            padding: 1em;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0d0t3-iegfV6GbLz5loz1I8IpJvGkoG1PA&s);
+            background-position: 100%;
+            background-size: cover;
+            color: white;
+           
+            width: 100%;
+            bottom: 0;
+        }
+  
+</style>
+    </head>
+
+    <body>
+
+<h1>Day 03:-colors and background-color and Background Image</h1>
+
+
+<nav>
+    <a href="#color">color</a>
+    <a href="#Color_Types">Color Types</a>
+    <a href="#background-color">background-color</a>
+    <a href="#background-image">background-image</a>
+    <a href="#Image_Types">Image Types</a>
+    <a href="#Image_Properties	">Image Properties	</a>
+    <a href="#Combining_Background_Properties">Combining Background Properties</a>
+    <a href="#examples">Examples</a>
+    <a href="#notes">Notes</a>
+</nav>
+<h2>HTML and CSS Table: color, background-color, and background-image with Detailed Types and Properties</h2>
+<table class="card">
+    <tr> <section>
+        
+        <th>Property</th>
+        <th>Description</th>
+        <th>	Syntax</th>
+        <th>Examples</th>
+        <th>Effect</th>
+    
+</section></tr>
+    
+    
+    <section  id="color"><tr>
+        <th>color	</th>
+        <td>Sets the color of the text in an element.		</td>
+        <td>color: <b>value;</b>		</td>
+        <td>color:<b> red;</b>
+            color: <b>#ff0000;</b>
+            color:<b> rgb(255, 0, 0);</b>	</td>
+        <td>Changes the text color.
+        </td>
+    </tr></section>
+    
+    
+    <section id="Color_Types"><tr>
+        <th>Color Types		</th>
+        <td>Named Colors: Predefined color names like red, blue, etc.<br>
+
+           <b> Hex Code: </b>Colors in #RRGGBB format.<br>
+
+            <b>RGB:</b> Colors in rgb(red, green, blue) format.<br>
+
+           <b> HSL:</b> Colors in hsl(hue, saturation, lightness) format.<br>
+
+           <b> RGBA:</b> Adds transparency to rgb with alpha (a) value.<br>
+
+            <b>HSLA:</b> Adds transparency to hsl with alpha (a) value.<br>
+		</td>
+        <td>color:<b> red;</b><br>
+
+            color: <b>#00ff00;</b><br>
+
+            color:<b> rgb(0, 0, 255);</b><br>
+
+            color: <b>hsl(240, 100%, 50%);	</b><br>
+        </td>
+        <td>	</td>
+        <td>Adds versatility in color specification.
+        </td>
+    </tr></section>
+    
+    <section id="background-color"><tr>
+        <th>background-color		</th>
+        <td>Sets the background color of an element.			</td>
+        <td>background-color: value;		</td>
+        <td>background-color: <b>yellow;</b><br>
+
+            background-color:<b> #f0f0f0;</b><br>
+
+            background-color: <b>rgba(0, 0, 0, 0.5);</b><br>
+        </td>
+        <td>Changes the background of an element.
+
+        </td>
+    </tr></section>
+    <section id="background-image"><tr>
+        <th>background-image			</th>
+        <td>Applies an image as the background of an element.				</td>
+        <td>background-image:<b> url("path/to/image");</b>		</td>
+        <td>bbackground-image: <b>url("example.jpg");</b><br>
+
+            background-image: <b>linear-gradient(to right, red, blue);</b><br>
+        </td>
+        <td>Displays an image or gradient as the element’s background.
+
+        </td>
+    </tr></section>
+    
+    <section id="Image_Types"><tr>
+        <th>Image Types			</th>
+        <td><b>File Formats: </b>jpeg, png, gif, svg, etc.<br>
+
+           <b> Gradients: </b>Linear or radial gradients created via CSS.<br>
+        </td>
+        <td>background-image:<b>url("image.png");</b> <br>
+
+            background-image: <b>linear-gradient(red, yellow);</b>	<br>
+        </td>
+        <td></td>
+        <td>Enables both image and custom gradient backgrounds.
+
+        </td>
+    </tr></section>
+    <section id="Image_Properties"><tr>
+        <th>Image Properties				</th>
+        <td><b>background-repeat: </b>Repeats the image (repeat, no-repeat, repeat-x, repeat-y).<br>
+
+       <b>background-repeat: </b> Scales the image (cover, contain, auto, or specific dimensions like 100px).<br>
+
+        <b>background-position: </b>Sets the position of the image (center, top left, etc.).<br>
+
+       <b> background-attachment:</b> Fixes the image or scrolls it with the content (fixed, scroll).<br>
+
+        <b>background-clip:</b> Defines how the background is drawn within the element (border-box, padding-box, content-box).	<br>
+    </td>
+        <td><b>Example for repeat: </b>background-repeat: no-repeat;<br>
+
+            <b>Example for size:</b> background-size: cover;	<br>
+        </td>
+        <td></td>
+        <td>Customizes how images are displayed, positioned, and sized.
+
+        </td>
+    </tr></section>
+    <section id="Combining_Background_Properties"><tr>
+        <th>Combining Background Properties				</th>
+        <td>Multiple background properties can be combined for concise styling.		</td>
+        <td>background: <b>url("image.jpg") no-repeat center / cover;</b>		</td>
+        <td></td>
+        <td>Simplifies writing background-related CSS rules.
+        </td>
+    </tr>
+    </section>
+
+
+
+</table>
+<br>
+<section id="examples"><h2>Examples of Usage</h2>
+
+    <section class="card" id="exam1">
+        <h3>Setting Text and Background Colors
+        </h3>
+        <p>p {<br>
+
+        color: rgb(255, 0, 0); /* Text in red */<br>
+
+        background-color: hsl(120, 100%, 75%); /* Light green background */<br>
+
+      }
+      </p></section>
+    
+      <br>
+      <section class="card" id="exam2"> <h3>Applying a Background Image</h3>
+    <p>div {<br>
+
+        background-image: url("background.jpg");<br>
+
+        background-repeat: no-repeat;<br>
+
+        background-size: cover;<br>
+
+        background-position: center;<br>
+
+      }
+      <br>
+
+      </p></section>
+     <br>
+
+     <section class="card" id="exam3"> <h3>Using a Gradient</h3>
+     <p>body {<br>
+
+        background-image: linear-gradient(to bottom, blue, lightblue);<br>
+
+      }<br>
+
+    </p></section>
+      <br>
+      <section class="card" id="exam4"> <h3>Combining Properties
+        </h3>
+        <p>section {<br>
+
+            background: url("pattern.png") no-repeat center / contain, linear-gradient(to right, red, yellow);<br>
+
+          }<br>
+
+          
+       </p></section></section>
+
+         <br>
+
+         <section id="notes">
+            <h2>notes:</h2>
+            <ul>
+                <li><b>Fallbacks:</b> Always specify a background-color as a fallback for background-image in case the image fails to load.
+                </li>
+                <li><b>Performance:</b> Use compressed image formats (like webp) for better page load times.
+                </li>
+                <li><b>Gradients:</b> CSS gradients provide a lightweight alternative to images for backgrounds. </li>
+            </ul>
+</section>
+
+<footer>
+    <p>© 2024 Blogs on color and background color and background image  | Designed by Jyoti Kumari</p>
+</footer>
+
+    </body>
+</html>
