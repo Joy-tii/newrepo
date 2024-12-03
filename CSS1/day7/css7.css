@@ -1,0 +1,49 @@
+h1{
+    background-color: rgb(109, 221, 244);
+    padding: 40px;
+    text-align: center;
+}
+
+.card{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0,0, 0.5);
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+}
+body{
+    padding: 40px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #78b8e5;
+
+}
+
+nav a {
+    color: rgb(10, 9, 10);
+    text-decoration: none;
+    padding: 1em;
+    padding-inline: 5em;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #f3f1f7;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #60b2e1;
+    color: white;
+
+    width: 100%;
+    bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    width: 500px ;
+    height: 500px;
+}
