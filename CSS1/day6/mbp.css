@@ -119,4 +119,7 @@ footer {
     border: 5px solid #000;
     margin: 15px;
   }
-  
+  span{
+    background-color: #feb47b ;
+    border: 3px doted #07128e;
+  }
