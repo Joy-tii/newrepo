@@ -1,0 +1,53 @@
+section{
+    background-color: rgb(245, 245, 240);
+    border-radius: 10px;
+    border: 1px solid #feb47b;
+    padding: 40px;
+    width: 80%;
+    box-shadow: 0 4px 4px rgb(54, 50, 50);
+    margin: 20px;
+           
+
+}
+
+#sec1{
+    display: grid;
+            place-items: center;
+            padding: 40px;
+
+}  
+
+h1{
+    background: radial-gradient(circle, rgb(10, 0, 0), rgb(225, 225, 230));
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1em;
+   
+    display: block;
+}
+
+nav a:hover {
+    background-color: #ede0d0;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(45deg, #19191c, #adaaba);
+    color: white;
+
+    width: 100%;
+    bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
