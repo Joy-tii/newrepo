@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog on Display property</title>
+    <link rel="stylesheet" href="bod.css">
+</head>
+
+<body>
+    <section>
+        <h1>WELCOME TO MY BLOGS PAGE <BR> Here we Understanding the CSS display Property</BR></h1>
+
+    </section>
+    <br>
+
+    <section id="sec1">
+
+        <p>
+            When it comes to designing responsive and visually appealing web pages, the display property in CSS is one
+            of
+            the most essential tools in your toolkit. It determines how an element is displayed on the web page and
+            plays a
+            significant role in layout design. Whether you’re a beginner or a seasoned developer, mastering the display
+            property can unlock endless design possibilities.
+        </p>
+        <br>
+
+        <section id="sec1">
+
+            <section class="section1">
+                <h2>What is the display Property?
+                </h2>
+                <p>The display property specifies the display behavior (or type) of an HTML element. In simpler terms,
+                    it
+                    defines how an element is rendered in the document. By default, every HTML element has a natural
+                    display
+                    type—block-level or inline—but you can override this behavior using CSS.
+
+                </p>
+            </section>
+
+            <div class="section">
+                <h3>Syntax
+                </h3>
+                <p>The syntax for using the display property is straightforward:
+                    <br>
+                    element {<br>
+                    display: value;<br>
+                    }br
+                    <b>Here, value can be one of many predefined keywords that determine how the element is rendered.
+
+                </p>
+            </div>
+
+
+            <h2>Common display Values and Their Uses
+            </h2>
+            <p>Let’s explore some of the most common values for the display property:
+
+            </p>
+            <section class="section1">
+                <h3>1. block</h3>
+                <ul>
+                    <li>Description: A block-level element takes up the full width of its parent container, meaning it
+                        stretches to fill the horizontal space available. It starts on a new line and forces subsequent
+                        content to appear on the next line.</li>
+                    <li>Common Examples: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;section&gt;.
+                    </li>
+                    <li>Use Case: Ideal for creating sections of content like paragraphs, headers, divs, etc.
+                    </li>
+
+                </ul>
+            </section>
+            <div class="section">
+                <h3>Syntax </h3>
+                <p>
+                    div {<br>
+                    display: block;<br>
+                    } <br>
+                </p>
+                <div class="box1">
+                    <p> this is box1 having block property .</p>
+                </div>
+            </div>
+
+
+
+            <section class="section1">
+                <h3>2. inline
+                </h3>
+                <ul>
+                    <li>Description: Inline elements only take up as much width as necessary. They do not start on a new
+                        line, allowing content to flow on the same line as other inline elements.</li>
+                    <li>Common Examples: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;.
+
+                    </li>
+                    <li>Use Case: Best for styling smaller portions of content like text, links, or inline elements
+                        inside
+                        block-level elements.
+
+                    </li>
+
+                </ul>
+
+            </section>
+            <div class="section">
+                <h3>Syntax
+                </h3>
+
+                <p>a {<br>
+                    display: inline;<br>
+                    } <br>
+
+                </p>
+
+
+                <div class="box2">
+                    <p> this is box2 having inline property so that its take only required space....</p>
+                </div>
+            </div>
+
+
+            <section class="section1">
+                <h3>3. inline-block</h3>
+                <ul>
+                    <li>Description: This value combines the characteristics of both block and inline. The element
+                        behaves
+                        like an inline element (appears on the same line as other elements) but can have width and
+                        height
+                        properties like block-level elements.
+                    </li>
+                    <li>Common Examples: Buttons, image containers, or navigation links.
+
+                    </li>
+                    <li>Use Case: Used when you need an element to align with others horizontally but still want to
+                        control
+                        its dimensions.
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <div class="section">
+                <h3>Syntax
+                </h3>
+
+                <p> button {<br>
+                    display: inline-block;<br>
+                    }</p> <br>
+                <div class="box3">
+                    <p> box3 having inline-block property</p>
+
+                </div>
+                <div class="box4">
+                    <p>box4 allow box5</p>
+                </div>
+
+            </div>
+
+
+
+            <section class="section1">
+                <h3>4. none
+                </h3>
+                <ul>
+                    <li>Description: The element is completely removed from the document flow and does not take up any
+                        space. It is not rendered on the page at all.
+
+                    </li>
+                    <li>Use Case: Often used for hiding elements dynamically (e.g., during animations or when a user
+                        interacts with a button to toggle visibility).
+
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <div class="section">
+                <h3>Syntax
+                </h3>
+
+                <p>
+                    .hidden {<br>
+                    display: none;<br>
+                    } <br>
+                </p>
+
+
+            </div>
+        </section>
+    </section>
+    <footer>
+        <p>© 2024 Blogs on Display Property in CSS | Designed by Jyoti Kumari</p>
+    </footer>
+
+</body>
+
+</html>
