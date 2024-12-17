@@ -1,45 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=Z, initial-scale=1.0">
     <title>Practice layout</title>
     <style>
-       
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .parent-container {
+            width: 800px;
+            height: 800px;
+            border: 5px solid grey;
+
+
+        }
+
+        .heading {
+            background-color: #DDAA02;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+        }
+        .heading:hover{
+            background: linear-gradient( #92730e,#DDAA02);
+        }
+
+        .navbar {
+            background-color: #cccccc;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .nav-item {
+            background-color: #ffffff;
+            border: 1px solid black;
+            color: #DDAA02;
+            padding: 10px 50px;
+            border-radius: 5px;
+        }
+        .nav-item:hover{
+            background-color: #DDAA02;
+            color: white;
+            box-shadow: 0 2px 2px #bdb9b9;
+           
+        }
+
+        .main-contain {
+            background-color: #808080;
+            height: 75%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .small-container {
+            background-color: #ffffff;
+            width: 25%;
+            padding: 10px;
+            margin: 5px;
+             border-radius: 5px;
+        }
+
+        .big-container {
+            background-color: white;
+            width: 50%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 100%;
+        }
+        img:hover{
+            box-shadow: 2px 4px 4px grey;
+        }
+
+        .footer {
+            background-color: #DDAA02;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border-top: 5px solid black;
+        
+        }
+        button{
+            padding: 10px;
+            box-shadow: 0 2px 2px rgb(114, 107, 107);
+            border-radius: 5px;
+
+        }
+        button:hover{
+            background-color: #afa7a7;
+        }
     </style>
 </head>
-<body>
-   
-<div class="parent-container">
 
-    <div class="header">
-        <div class="heading">Power Grid Homepage</div>
-       <div class="navbar">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">About</div>
-        <div class="nav-item">Blog</div>
-        <div class="nav-item">Careers</div>
-        <div class="nav-item">contact</div>
-       </div>
+<body>
+
+    <div class="parent-container">
+
+        <div class="header">
+            <div class="heading">
+                <h1>Power Grid Homepage</h1>
+
+            </div>
+            <div class="navbar">
+                <div class="nav-item">Home</div>
+                <div class="nav-item">About</div>
+                <div class="nav-item">Blog</div>
+                <div class="nav-item">Careers</div>
+                <div class="nav-item">contact</div>
+            </div>
+        </div>
+        <div class="main-contain">
+            <div class="small-container">
+                <img src="./../../aseet/fam1.jpeg" alt="image1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius deleniti dolore quisquam molestiae
+
+                </p>
+                <button>Go Somewhere</button>
+            </div>
+            <div class="small-container">
+                <img src="./../../aseet/fam2.jpg" alt="image2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, veniam. Quibusdam ipsum quod
+                </p>
+                <button>Click me</button>
+            </div>
+            <div class="big-container">
+                <img src="./../../aseet/fam4.jpg" alt="image3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, tenetur iste! Ad amet aperiam
+                </p>
+                <button>Do Something</button>
+            </div>
+        </div>
+        <div class="footer"> Copyright 2025</div>
     </div>
-    <div class="main-contain">
-        <div class="small-container">
-            <img src="./../../aseet/fam1.jpeg" alt="image1">
-        </div>
-        <div class="small-container">
-            <img src="./../../aseet/fam2.jpg" alt="image2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, veniam. Quibusdam ipsum quod quae laboriosam, illo iusto? Laboriosam dolore ullam voluptatum dolor at suscipit. Quasi libero facere delectus beatae cupiditate.</p>
-       <button></button>
-        </div>
-        <div class="big-container">
-            <img src="./../../aseet/fam4.jpg" alt="image3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, tenetur iste! Ad amet aperiam iure illum repellat? Nulla, quibusdam quo dolores temporibus quae deleniti, porro fuga excepturi aliquam ipsa aut?</p>
-       <button>Do Something</button>
-        </div>
-    </div>
-    <div class="footer"> Copyright 2025</div>
-</div>
 
 
 </body>
+
 </html>
