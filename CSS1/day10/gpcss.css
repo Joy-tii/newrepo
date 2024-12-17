@@ -31,10 +31,14 @@ justify-content: space-between;
 
 
 }
+
+.header-right span{
+    border-radius: 1000px;
+    padding: 5px;
+}
 .header-right span:hover{
     background-color: rgb(204, 205, 207);
-    border-radius: 999px;
-    padding: 2px;
+    
 }
 
 .mainbody{
@@ -49,6 +53,8 @@ object-fit: contain;
 height: 100px;
 
 }
+
+
 .search_input{
     display: flex;
     align-items: center;
@@ -64,7 +70,7 @@ height: 100px;
 
 }
 .search_input:hover{
-    box-shadow: 0 8px 8px rgb(134, 133, 133);
+    box-shadow: 0 6px 6px rgb(134, 133, 133);
    
     border-radius: 999px;
 }
