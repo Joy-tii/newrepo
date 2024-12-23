@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <link rel="stylesheet" href="flexbox-blogs.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">Understanding Flexbox in CSS: A Comprehensive Guide</div>
+    <div class="menu">
+      <a href="#Intro">Introduction</a>
+      <a href="#Key">Key concept</a>
+      <a href="#properties">Properties</a>
+      <a href="#Flex-item">Flex-item</a>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div id="Intro">
+      <p><b>CSS Flexbox (short for "Flexible Box") is a powerful layout model that allows you to design complex and
+          responsive layouts efficiently. It is particularly useful for aligning and distributing space among items in a
+          container, even when their sizes are dynamic or unknown.
+          <br>
+
+          In this blog, we’ll explore the Flexbox model in detail, its key properties, and practical examples with code
+          snippets to help you master it.</b></p>
+
+      <h2>What is Flexbox?
+
+      </h2>
+      <div class="parent1">
+        <div class="child1-1">
+          <p>Flexbox is a one-dimensional layout model, meaning it arranges items either in a row (horizontally) or a
+            column (vertically). It simplifies tasks like centering items, creating equal spaces, or handling dynamic
+            elements.
+            <br>
+
+            To start using Flexbox, set the display property of a container to flex or inline-flex:
+          </p>
+        </div>
+        <div class="child1-2">
+          <p>.container {<br>
+            display: flex; /* or inline-flex */ <br>
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Key">
+      <h2>Key Concepts of Flexbox</h2>
+      <div class="parent1">
+        <div class="child1-1">
+          <h3>1. Flex Container and Flex Items</h3>
+          <ul>
+            <li><b>Flex Container:</b> The parent element where Flexbox is applied.</li>
+            <li><b>Flex Items:</b> The child elements of the flex container.</li>
+          </ul>
+          <h3>2. Main Axis and Cross Axis</h3>
+          <ul>
+            <li><b>Main Axis:</b> The primary axis along which flex items are placed. Defined by the flex-direction
+              property.
+            </li>
+            <li><b>Cross Axis:</b> The perpendicular axis to the main axis.</li>
+          </ul>
+        </div>
+        <div class="child1-2">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAABVlBMVEX////t6P9BzE/520f/PZsAAADv6v9GAP/c1f9qQ//z8P+CZf/z7v/b1+z6+f/49v9ZKv9VI//q5P9cL///40mKh5bOyt9SUFq5tchD01EYFREJFBLnOI28LnM0LhhAORscVCZORR0YCRcWQB9QFTX/O5qFgpEzoEDVy//U1NX/6vX19faNjY/Qxf+HbP97Wv/Iu/+ReP/l5eb/UKPt0UT/W6f/xN4/xU02qUOcmaqhnq/k3f+XgP+diP+wnv90Uv++sP//7UzGxsisrK7/g7r/4O2ejDD/stP/0uWGdioshzdeXmFcUiAOJhh0dHY7uUgoezM/P0PTuz6+qDhxb3y/u8+8q/+ok/+xof81AP9RUVUwMDUjIyltYCT/dLQpJhUiaCz/lMO2oDYqgjb/D44AABERMBoeXCl8bij/nsl+foG1tbYMIBUUOh6Xhi48ECkYGCFJR1Nu+H94AAAJNElEQVR4nO2d61/aShqAEzQDhEmplWu762XdgEhEjFEUxAuIqCgIRqmXWnWxPYqna///LzuBevYAETM2UdT3UfObzDBcHt+5ERIYBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGDQK8QsN+/srxC3WXLeDzhfGQMD5sl5j/lXBR40U84HxL4i0AeQcy8gpwsgpws9LEebZbCoPU/3huY9aOsd96wc9CGVSrGplizkSOG/7ePGo6HxuEV2elcOTtsHB8YPJ8nsACEeEREo5RywL2JEMlgek6zpSW0Hr6R5THZZzGOWJEx7Bj0tJ8a43fbJVGxq0uFC6QPEx1zYMeBwuKYm+aml5Xjc7kytLE+n4tXxxUWXA1eXq3y1OmWenR6WU32/7HTbx5fTcTtyTQ98QPzgihYpg9UVOz6sVgeQs8qmx6fSn6fi9vjy4orTMRiPLZvYxnpYTnpqMk7k2F2xqdTkYZpneecSaUMOu4M/dBw6xu1u5wqKuZyLn13xQXd6Ou2MuQ5i1TfSrFw84knkVMdjaDk9kEL4wP552o6c6c8kchyTRE560u6YWiSR855Px1acqcVxVxU/fNdG6V05aGWJ9K/TjtS0K+6Y5pcOSI+74pp2YJIxzsdSJC/ucqRjSwdan4MPlvilqTReWjFzMtGzclikxQBGiAxEJNkYthGvDVqN0UrL0wYxXruFlsbN0crMUb2H5Tw/IKcLIKcLIKcLIKcLIKcL1suhOhDye7XNrm65HLqn116dsrbZ1S2Ww5c5GkKtk3/ko6rN+VofHgl01QNtSw/L5fi5fxmH83bIufxomEsdOZefDPMscv7Rb5R/6sgZWvUYZHVYR86noGFGXqAcT59BPLpybEYBOSAH5LwEOVEmI4Oce+AyHAdy9IkUs9liBOToEuVI6ERBjj5yhLkLHJDTylGmfHRUvuuRQU4LWTlLgGalj5xlGIkucsSaKP6GHM+9sgzJCQZtwaeSEz06Pinc7RiSI65NzObFfiKIKBKp5Xi+jO7tPV5OcPfb/Ja+HQs6ZDLNyVDJ6c+tiRM18XRGnBXFWWo5la/K+rpHIX4qHkWhllP6VAqfBRNhm20+aCtZLCdyGYlwNM1KnJ2Y65+obeRzp+f5tTmRVs76x4uLdWVo/atnWBmtUMsJc1vhs8TOf3ZsI/MjYasjh4kSaCKntjErTsxMnOc3ahsTIrUcZdizvr65eTFcUS5/eKjl2L4Fw7tb37fGtmw334NWyznhOKrI6Rc3Tomc3OzpLJHT/0g565WKUvn4x2Pk2MJnW7ul+UTiZsRqOZGClClQRU5DTm1jLnd+9ZhmpQwROcrQ5te+r8r2Hr2cHSIn8e1sJzFWOtuyWE6UqxePqdZW4gz5JV3xjLadoe6Q+5Q+rR8mvY3i6aPvkEknnEiQ3jih9cZWd8hMPVq8vksbnOc0fx85lHeh5yaBLRgare6bAIIcMpKfd9HzsJwL5T41huSES/eYsUbOtXxcpJKzVsuR9YPWqhpQytlTLi6aGZ6OhYQhOfO72vqh8dO2kLBgbXVcL9CsysXT/BWTFzdyeTJgTVzlWoerB+V4/qgMD1Uqo6MVZXt7e3Noz0MlJ7gbHrkJl8bGwomRkbHdby0LCQuG8vJRnUrO2lxtopa/EnOzudm1jdrEjEglZ7tycbH6kcxxlOHV7Uplm1LOWZhEzp/zpZvSDkkndqyVwxSPZJqFZ1PO3Fw+P5PrP52r5ajlrF94Ljc3f1S+rH55jJzwbnDnbHe3NPYUcmQmS/NOoCbnHQmZ2TkxN6OJoo+cL32je5XNyrYWOaP0kTOW+L41f5b4U5NzY62cqHb0gWKGTDpkce2qtpY/Fc/7SfqcukPuW6/0/fihKHuePUVpmSIb6JDnS7ateRtZPiTCQZJuWXlacfRBojv6IDbfymnMAZsTQSo5vzTozn2MzXOCjTe8dLDiuBUcfbifqMzAEc/7kDhOAjn6yBzlO4FvSU7khGFuQc49FDmO7ujDG5IjS9G/+mOQ00b0UpZhtLovcjjaN9jfkBwyz5Hv5oAgp52TevYE5OgTKTMM3dEHajkv90PaUS6bfWht9W/D/FdHDjdqmI96H+8fM8yN+R8kOC53/yDBT6pTM97WiSFIoKO9Pl1tth3K6u0XpOnt862e9mS0pz7f6kUDcroAcrrwBCfA4va2jDqusmXZVbd+D+s75H1v2xiEfGygJQcjIfDsdvSuEGK5HOxnk0lM+HUlE8S7VSEg4AYIkQ2vYjagJbQLbpl49RsqsFfofGir5eDk7UIgyfr9SVZ9pwoICT/Vn0KIVf2BgN8vINXvFW5VNuRW/Sq/oPoXnskOTnIdc6wnaFb+d8lAyOf2swshsjjAquD2C6rgZ9kC71OTAXcAq1hQ973vkknvvtv/Sw6JJO1Pu1zO37ZatLHNreFCbKyQ17FjfYfsdycDqqqGWFZ7dOx38yqRoyLhOBQKeAXE8yStJvexL7Tg4wu/nhYbWsBCiNyCZIdCPhwgWwEnQyEvi7wh3cIFUogRSSY7Cj80C9m/CvfxfqOOVsgiUriA0M/LdjtPIoeAvNjvI2GBvUnhVoscxPrZ/cC+yqpI9TUyVJ/Xx/vv5HjJq/B6veQlki15iWRL5JAteS3eX4X7HYUYefUKWUzqkBbbVig0C7U71OTcPr0c8vJ8OEkEBHhtkCL/wwCr/SCBRAEOqD7yr2QD/L5K/sizRWY3K4Ntjk92uHkCOVibxTQGpuZ0pjFIadfjQs3nhZozoYYNst9R/2nAC8/RIb8QyFCuM38FOU2eZRL4kgE5XQA5XQA5XQA5XTBZDnrur7EwF1O/FGPA9cp4b56c5/7SHCswSw7jeIWY5QYAAAAAAAD4DSS5PSfbkfNm6ZTTmfOmkK6PpWJZjhbKElOQi9KxdoWIbPlIrl8zZbkgZ8r//2Dim6NQyHCRI0nORrgoFykXG2cxSXLhmrk9KjJc5ETK1J/7OT4bBYnhmKKUKRe56GWkXCc+GOaoUL5mrknqMhIp3EoP38srpSBFNTnFYr0ROVlNToQkrmUue0x2ilnp5OF7eaXUI0yWyWSiUj0bzcpkT4qSPkeqZzIZ7VKFsiy98U4ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAe4n8wbqLKAux7hQAAAABJRU5ErkJggg=="
+            alt="img">
+        </div>
+      </div>
+    </div>
+
+    <div id="properties">
+      <h2>Important Flexbox Properties</h2>
+      <h3>Flex Container Properties</h3>
+      <div class="parent1">
+        <div class="child1-1">
+
+          <h4>1. flex-direction</h4>
+          <p>Defines the direction of the main axis.</p>
+          <ul>
+            <li><b>row (default):</b> Items are placed from left to right.</li>
+            <li><b>row-reverse:</b> Items are placed from right to left.</li>
+            <li><b>column: </b>Items are placed from top to bottom.</li>
+            <li><b>column-reverse:</b> Items are placed from bottom to top.
+
+            </li>
+          </ul>
+        </div>
+        <div class="child1-2">
+          <h4>Example:</h4>
+          <br>
+          <p>.container {<br>
+            display: flex; <br>
+            flex-direction: row; /* Try column, row-reverse, column-reverse */ <br>
+            }</p>
+
+          <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="parent1">
+      <div class="child1-1">
+
+        <h4>2. justify-content</h4>
+        <p>Aligns items along the main axis.</p>
+        <ul>
+          <li><b>flex-start (default):</b> Items align to the start of the container.
+
+          </li>
+          <li><b>flex-end:</b> Items align to the end of the container.
+
+          </li>
+          <li><b>center:</b> Items are centered along the main axis.</li>
+          <li><b>space-between:</b> Space is distributed between items.
+
+          </li>
+          <li><b>space-around:</b> Space is distributed around items.</li>
+          <li><b>space-evenly: </b>Equal space is distributed between and around items.</li>
+        </ul>
+      </div>
+      <div class="child1-2">
+        <h4>Example:</h4>
+        <br>
+        <p>.container {<br>
+          display: flex;<br>
+          justify-content: center; /* Try flex-start, flex-end, space-between, etc. */ <br>
+          }</p>
+
+        <div class="flex-container2">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="parent1">
+      <div class="child1-1">
+
+        <h4>3. align-items
+
+        </h4>
+        <p>Aligns items along the cross axis.</p>
+        <ul>
+          <li><b>stretch (default):</b> Items stretch to fill the container.
+
+          </li>
+          <li><b>flex-start:</b> Items align to the start of the cross axis.
+          </li>
+          <li><b>flex-end:</b> Items align to the end of the cross axis.</li>
+          <li><b>center:</b> Items are centered along the cross axis.
+
+          </li>
+          <li><b>baseline:</b> Items align along their baselines.</li>
+
+        </ul>
+      </div>
+      <div class="child1-2">
+        <h4>Example:</h4>
+        <br>
+        <p>.container {<br>
+          display: flex; <br>
+          justify-content: center; /* Try flex-start, flex-end, space-between, etc. */ <br>
+          }</p>
+
+        <div class="flex-container3">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent1">
+      <div class="child1-1">
+
+        <h4>4. align-content
+
+        </h4>
+        <p>Aligns multiple rows of items when there’s extra space in the cross axis. Applicable only for multi-line
+          containers.</p>
+        <ul>
+          <li><b>stretch (default):</b> Rows stretch to fill the container.
+
+          </li>
+          <li><b>flex-start:</b> Rows align to the start of the cross axis.
+          </li>
+          <li><b>flex-end: </b>Rows align to the end of the cross axis.</li>
+          <li><b>center:</b> Rows are centered along the cross axis.
+
+          </li>
+          <li><b>space-between, space-around, space-evenly:</b> Similar to justify-content.</li>
+
+        </ul>
+      </div>
+      <div class="child1-2">
+        <h4>Example:</h4>
+        <br>
+        <p>.container { <br>
+          display: flex; <br>
+          flex-wrap: wrap; /* Enables multi-line layout */ <br>
+          align-content: space-between; /* Try stretch, center, etc. */ <br>
+          }</p>
+
+        <div class="flex-container4">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+          <div>14</div>
+          <div>15</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="parent1">
+      <div class="child1-1">
+
+        <h4>5. flex-wrap
+
+
+
+        </h4>
+        <p>Controls whether items wrap onto multiple lines.</p>
+        <ul>
+          <li><b>nowrap (default): </b>Items do not wrap.
+
+
+          </li>
+          <li><b>wrap:</b> Items wrap onto the next line if needed.
+          </li>
+          <li><b>wrap-reverse:</b> Items wrap onto the next line in reverse order.</li>
+
+
+        </ul>
+      </div>
+      <div class="child1-2">
+        <h4>Example:</h4>
+        <br>
+        <p>.container {<br>
+          display: flex;<br>
+          flex-wrap: wrap; /* Try nowrap, wrap-reverse */ <br>
+          }</p>
+        <div class="flex-container5">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+          <div>14</div>
+          <div>15</div>
+          
+        </div>
+      </div>
+    </div>
+
+    <h2 id="Flex-item">Flex Item Properties</h2>
+    <div class="parent1">
+      <div class="child1-1">
+        <h4>1. flex</h4>
+        <p>A shorthand for flex-grow, flex-shrink, and flex-basis.</p>
+        <ul>
+          <div style="background-color: rgb(210, 209, 209); padding: 5px;  ">
+            <li><b>flex-grow****:</b> Defines how much a flex item will grow relative to others.
+              <p>Make the third flex item grow eight times faster than the other flex items.
+              </p>
+
+              <div class="flex-container6">
+                <div style="flex-grow: 1">1</div>
+                <div style="flex-grow: 1">2</div>
+                <div style="flex-grow: 8">3</div>
+              </div>
+            </li>
+          </div>
+          <br>
+          <div style="background-color: rgb(210, 209, 209); padding: 5px; ">
+            <li><b>flex-shrink****:</b> Defines how much a flex item will shrink relative to others.
+              <p>Do not let the third flex item shrink as much as the other flex items:</p>
+              <div class="flex-container7">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-shrink: 0">3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>13</div>
+                <div>14</div>
+                <div>15</div>
+                <div>16</div>
+                <div>17</div>
+                <div>18</div>
+               
+                
+              </div>
+            </li>
+          </div>
+<br>
+          <div style="background-color: rgb(210, 209, 209); padding: 5px; ">
+            <li><b>flex-basis****:</b> Defines the default size of a flex item before it grows or shrinks.
+              <p>Set the initial length of the third flex item to 80 pixels:</p>
+
+            <div class="flex-container8">
+              <div>1</div>
+              <div>2</div>
+              <div style="flex-basis:80px">3</div>
+              <div>4</div>
+            </div>
+            </li>
+           </div>
+
+        </ul>
+      </div>
+        <div class="child1-2">
+          <h4>Example:</h4>
+          <p>
+            <div  style="background-color: rgb(210, 209, 209); padding: 5px; ">
+              .item {<br>
+                flex: 1; /* Grow equally */ <br>
+                }
+                <br>
+                .item-large {<br>
+                flex: 2; /* Takes twice the space of .item */ <br>
+                } 
+            </div>
+            <br>
+            <div  style="background-color: rgb(210, 209, 209); padding: 5px;  ">
+              .item {<br> 
+                flex-shrink: 1; /* Shrinks equally */<br>
+              }<br>
+              .item-small {<br>
+                flex-shrink: 2; /* Shrinks twice as much as .item */<br>
+              }
+            </div>
+            <br>
+            <div  style="background-color: rgb(210, 209, 209); padding: 5px;  ">
+              .item {<br>
+                flex-basis: 100px; /* Fixed initial size */<br>
+              }<br>
+              .item-wide {<br>
+                flex-basis: 200px; /* Larger initial size */<br>
+              }
+             </div>
+  
+          </p>
+        </div>
+      
+    </div>
+
+    <div class="parent1">
+      <div class="child1-1">
+
+        <h4>2. align-self
+
+        </h4>
+        <p>Overrides the align-items property for a specific item.</p>
+        <ul>
+          <li><b>Same values as align-items:</b> auto, stretch, flex-start, flex-end, center, baseline.
+
+          </li>
+
+          <p>The "align-self: center;" aligns the selected flex item in the middle of the container:</p>
+
+          <div class="flex-container9">
+            <div>1</div>
+            <div>2</div>
+            <div style="align-self: center">3</div>
+            <div>4</div>
+          </div>
+
+        </ul>
+      </div>
+      <div class="child1-2">
+        <h4>Example:</h4>
+        <br>
+        <p>.item {<br>
+          align-self: center; /* Adjust alignment of a single item */ <br>
+          }
+          <br>
+          .item-top {<br>
+          align-self: flex-start; /* Overrides align-items for this item */ <br>
+          }
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2024 Blogs on flexbox in css | Designed by Jyoti Kumari</p>
+  </footer>
+</body>
+
+</html>

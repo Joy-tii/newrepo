@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play with Flexbox</title>
+    <style>
+        .main-container{
+            background-color: #05265c;
+            display: flex;
+            width: 600px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 10px;
+            gap: 20px;
+            flex-wrap: wrap;
+
+        }
+        .child-container{
+            background-color: yellow;
+            width: 150px;
+            height: 100px;
+           color: #ffffff;
+           font-size: 50px;
+           display: flex;
+           justify-content: center;
+           align-content: center;
+           align-items: center;
+        }
+
+        .main{
+            width: 600px;
+            height: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: #fd7978; 
+          
+        }
+        .header{
+            background-color: aquamarine;
+           margin-bottom: 10px;
+            width: 100%;
+            height: 80px;
+        }
+        .footer{
+            background-color: aquamarine;
+         
+            width: 100%;
+            height: 80px; 
+        }
+        .main-box{
+            width: 100%;
+            height: 320px;
+            display: flex;
+           justify-content: space-evenly;
+        margin-bottom: 10px;
+          
+
+        }
+        .aside-box{
+            background-color: aqua;
+            width: 40%;
+          margin-right: 15px;
+           height: 320px;
+          
+        }
+        .main-item{
+            background-color: #eb6363;
+            width: 60%;
+            display: flex;
+            box-sizing: border-box;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 320px;
+           
+
+        }
+        .image{
+            height: 100px;
+            width: 100px;
+          margin-bottom: 10px;
+            background-color: aliceblue;
+        }
+.play3{
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(129, 200, 231);
+}
+.header3{
+    width: 100%;
+    height: 60px;
+   
+    background-color: rgb(8, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.footer3{
+    width: 100%;
+    height: 60px;
+   
+    background-color: rgb(8, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; 
+}
+.nav3{
+    width: 100%;
+    height: 60px;
+   
+    background-color: rgb(40, 213, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.main3{
+    width: 100%;
+    height:250px ;
+    display: flex;
+  align-content: space-between;
+}
+.aside3{
+    width: 30%;
+    height: 250px;
+    background-color: rgb(95, 230, 142);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+}
+.main-box3{
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.main-item1{
+width: 100%;
+height: 50%; 
+display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+margin-bottom: 20px;
+background-color: rgb(79, 147, 184);
+}
+.main-item2{
+width: 100%;
+height: 50%;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+background-color: rgb(5, 3, 111);
+} 
+
+.play4{
+    width: 600px;
+    height: 300px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color: bisque;
+}
+.div1{
+    width: 100%;
+    height: 70px;
+   display: flex;
+   justify-content: space-between;
+   gap: 40px;
+}
+.sec1-1{
+    width: 10%;
+    
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec1-2{
+    width: 80%;
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec1-3{
+    width: 10%;
+   
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+
+.div2{
+    width: 100%;
+    height: 70px;
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+.sec2-1{
+    width: 70%;
+    
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec2-2{
+    width: 10%;
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec2-3{
+    width: 20%;
+   
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+
+.div3{
+    width: 100%;
+    height: 70px;
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+.sec3-1{
+    width: 10%;
+    
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec3-2{
+    width: 20%;
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec3-3{
+    width: 70%;
+   
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+
+.div4{
+    width: 100%;
+    height: 70px;
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+.sec4-1{
+    width:25%;
+    
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec4-2{
+    width: 10%;
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec4-3{
+    width: 25%;
+   
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec4-4{
+    width: 10%;
+   
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+.sec4-5{
+    width: 25%;
+   
+   
+    background-color: rgb(19, 241, 19);
+    border: 3px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Play with flexbox</h1>
+    <h2>play1</h2>
+    <div class="main-container">
+        <div class="child-container">1</div>
+        <div class="child-container">2</div>
+        <div class="child-container">3</div>
+        <div class="child-container">4</div>
+        <div class="child-container">5</div>
+        <div class="child-container">6</div>
+    </div>
+    <br>
+    <h2>play2</h2>
+    <div class="main">
+<div class="header"></div>
+<div class="main-box">
+    <div class="aside-box"></div>
+    <div class="main-item">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+    </div>
+</div>
+<div class="footer"></div>
+    </div>
+    <br>
+    <h2>play3</h2>
+    <div class="play3">
+        <div class="header3"> <h3>Header</h3></div>
+        <div class="nav3"><h3>Navigation</h3></div>
+        <div class="main3">
+            <div class="aside3"><h3>Aside</h3></div>
+            <div class="main-box3">
+                <div class="main-item1"><h3>content</h3></div>
+                <div class="main-item2"><h3>Section</h3></div>
+            </div>
+        </div>
+        <div class="footer3"><h3>Footer</h3></div>
+    </div>
+    <br>
+    <h2>play4</h2>
+    <div class="play4">
+        <div class="div1">
+            <div class="sec1-1"></div>
+            <div class="sec1-2"></div>
+            <div class="sec1-3"></div>
+        </div>
+        <div class="div2">
+            <div class="sec2-1"></div>
+            <div class="sec2-2"></div>
+            <div class="sec2-3"></div>
+        </div>
+        <div class="div3">
+            <div class="sec3-1"></div>
+            <div class="sec3-2"></div>
+            <div class="sec3-3"></div>
+        </div>
+        <div class="div4">
+            <div class="sec4-1"></div>
+            <div class="sec4-2"></div>
+            <div class="sec4-3"></div>
+            <div class="sec4-4"></div>
+            <div class="sec4-5"></div>
+        </div>
+    </div>
+</body>
+</html>
