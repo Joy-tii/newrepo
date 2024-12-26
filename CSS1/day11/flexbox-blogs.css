@@ -188,7 +188,7 @@ background-color:#2cc0e1 ;
   }
   .flex-container7 {
     display: flex;
-   
+    flex-wrap:wrap;
     align-items: stretch;
     width:70%;
 
