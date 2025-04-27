@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Property</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent-container {
+
+            border: 5px solid rgb(236, 16, 16);
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child-container {
+            width: 50px;
+            height: 50px;
+            padding: 20px;
+            background-color: rgb(186, 246, 226);
+            margin: 10px;
+        }
+
+        h2 {
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Box Property</h1>
+
+    <div class="parent-container">
+        <div class="child-container">
+            box1
+        </div>
+        <div class="child-container">
+            box2
+        </div>
+        <div class="child-container">
+            box3
+        </div>
+        <div class="child-container">
+            <h2>box4</h2>
+        </div>
+        <div class="child-container">
+            <h2>box5</h2>
+        </div>
+        <div class="child-container">
+            <h2>box6</h2>
+      
+       
+</body>
+
+</html>
+<!--item jis direction me align hoga aapka main axis hoga
+1.if flex is row then horizontal main axis and vertical cross axis
+2.if flex direction is coloum then vertical axis is the main axis and horizontal cross axis
+-->

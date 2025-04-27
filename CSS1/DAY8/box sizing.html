@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <link rel="stylesheet" href="./bs.css">
+</head>
+
+<body>
+        <h1>Understanding the box-sizing Property in CSS</h1>
+        <br>
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#bs">Box-Sizing</a>
+           
+            <a href="#cb">Content-Box</a>
+            <a href="#bb">Border-box</a>
+            <a href="#ot"> Others</a>
+            <a href="#con"> Conclusion</a>
+           
+    
+        </nav>
+      <div id="sec1">
+        <h2 id="intro">Introduction</h2>
+        <article>
+            <b>When designing websites, one of the most frustrating challenges developers encounter is maintaining
+                consistent dimensions for elements. Enter the box-sizing property in CSS, a handy tool that simplifies this
+                process and ensures that elements behave as expected when styled.
+                <br>
+                Let’s dive into what the box-sizing property is, why it’s important, and how you can use it to your
+                advantage.</b>
+        </article>
+
+    
+    <br>
+    <section id="bs">
+        <h2>What is the box-sizing Property?
+        </h2>
+        <p>The box-sizing property in CSS determines how the total width and height of an element are calculated. It
+            influences whether padding and borders are included in the element’s dimensions or not.
+            <br>
+            By default, the dimensions of an element (as defined by the width and height properties) exclude padding and
+            borders. This can sometimes lead to unexpected results, especially when adding padding or borders to
+            elements.
+
+        </p>
+
+
+    </section>
+    <br>
+    <section id="cb">
+        <h2>Values of the box-sizing Property
+        </h2>
+        <h3>1. content-box (Default Value)
+        </h3>
+        <ul>
+            <li>In this model, the width and height of an element apply only to the content area.
+            </li>
+            <li>Padding and borders are added to the defined width and height, increasing the total size of the element.
+            </li>
+        </ul>
+        <h3>Example:
+        </h3>
+
+       <div style="display: flex; justify-content: space-between; gap: 10px;">
+        <pre style="flex: 1;">
+            <code>
+                &lt;div class="content-box-example"&gt;&lt;/div&gt;
+                &lt;style&gt;
+                    .content-box-example {
+                      width: 200px;
+                      height: 100px;
+                      padding: 20px;
+                      border: 10px solid #333;
+                      box-sizing: content-box; /* Default behavior */
+                    }
+                    &lt;/style&gt;
+            </code>
+           </pre>
+    
+            <p style="flex: 1;">
+            <div class="content-box-example"></div>
+    
+            <style>
+                .content-box-example {
+                    width: 200px;
+                    height: 100px;
+                    padding: 20px;
+                    border: 10px solid #333;
+                    box-sizing: content-box;
+                    /* Default behavior */
+                }
+            </style>
+       </div>
+        <br>
+        <b>Here, the total width = 200px (content) + 40px (padding) + 20px (border) = 260px.</b>
+        </p>
+
+    </section>
+    <br>
+    <section id="bb">
+        <h2>2. border-box
+        </h2>
+        <ul>
+            <li>In this model, the width and height of an element include the content, padding, and border.
+            </li>
+            <li>The actual content area shrinks to accommodate padding and borders within the specified dimensions.
+            </li>
+        </ul>
+        <h3>Example:</h3>
+       <div style="display: flex; justify-content: space-between; gap: 10px;">
+        <pre style="flex: 1;">
+            <code>
+                &lt;div class="border-box-example"&gt; &lt;/div&gt;
+    
+                &lt;style&gt;
+                    .border-box-example {
+                        width: 200px;
+                        height: 100px;
+                        padding: 20px;
+                        border: 10px solid #333;
+                        box-sizing: border-box;
+                    }
+                    &lt;/style&gt;
+            </code>
+           </pre>
+            <br>
+            <p style="flex: 1;">
+            <div class="border-box-example"></div>
+    
+            <style>
+                .border-box-example {
+                    width: 200px;
+                    height: 100px;
+                    padding: 20px;
+                    border: 10px solid #333;
+                    box-sizing: border-box;
+                }
+            </style>
+       </div>
+        <br>
+        <b>Here, the total width remains 200px, and the content area adjusts to make room for padding and borders.</b>
+        </p>
+
+    </section>
+    <br>
+    <section id="ot">
+        <h2>Why Use box-sizing: border-box?
+        </h2>
+        <p>Using box-sizing: border-box simplifies the process of setting consistent dimensions, especially in complex
+            layouts. Here’s why:
+
+        </p>
+        <ul>
+            <li>Predictable Dimensions: The element’s total size doesn’t unexpectedly increase when adding padding or
+                borders.
+            </li>
+            <li>Easier Layouts: Helps maintain alignment and spacing without tedious recalculations.
+            </li>
+            <li>Responsive Design: Works well in percentage-based layouts or fluid designs.
+            </li>
+        </ul>
+    </section>
+<br>
+    <section>
+        <h2>When to Use content-box?
+        </h2>
+        <p>While border-box is popular for layouts, content-box can still be useful for elements where you want the
+            content dimensions to remain fixed, regardless of padding or borders. Examples include:
+
+        </p>
+        <ul>
+            <li>Buttons with dynamic padding.
+            </li>
+            <li>Certain types of animations or effects.
+            </li>
+        </ul>
+    </section>
+    <br>
+    <section>
+        <h2 id="con">Conclusion
+        </h2>
+        <p>The box-sizing property might seem like a small detail in CSS, but it has a big impact on web design. By
+            understanding and utilizing it effectively, you can create cleaner, more predictable layouts that save you
+            time and frustration.
+            <br>
+            For most use cases, applying box-sizing: border-box globally is a best practice, ensuring that padding and
+            borders don’t interfere with your element dimensions.
+        </p>
+    </section>
+</div>
+<footer>
+    <p>© 2024 Blogs on Box-Sizing in css | Designed by Jyoti Kumari</p>
+</footer>
+</body>
+
+</html>
